@@ -1,72 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>personal support</title>
 </head>
+
 <body>
     <header>
-    <h1>Please, fill the form</h1>
-    <nav>
-        <a href="index.html">Home</a>
-    </nav>
+        <h1>Please, fill the form</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
     </header>
     <main>
-        <form action="https://formspree.io/meqkkdlr" method="POST"> 
-        <label>
-            Name:
-            <input type="text" placeholder="Name" required>
-        </label>
-        <br>
-        <br>
-        <label>
-            Email:
-            <input type="email" placeholder="Email" required>
-        </label>
-        <br>
-        <br>
-        <label>Which type of support do you prefer:</label>
-        <label>
-            <input type="radio" name="type" value="skin">Skin
-        </label>
-        <label>
-            <input type="radio" name="type" value="hair">Hair
-        </label>
-        <label>
-            <input type="radio" name="type" value="both">Both
-        </label>
-        <br>
-        <br>
-        <label>Select your skintype:</label>
-        <label>
-            <input type="radio" name="type" value="oil">Oil
-        </label>
-        <label>
-            <input type="radio" name="type" value="dry">Dry
-        </label>
-        <label>
-            <input type="radio" name="type" value="sensative">Sensative
-        </label>
-        <br>
-        <br>
-        <label>Select your hairtype:</label>
-        <label>
-            <input type="radio" name="type" value="straight">Straigt
-        </label>
-        <label>
-            <input type="radio" name="type" value="curly">Curly
-        </label>
-        <label>
-            <input type="radio" name="type" value="gray">Gray
-        </label>
-        <br>
-        <br>
-        <input type="submit">
-        <input type="reset">
+        <form action="https://formspree.io/meqkkdlr" method="POST">
+            <label>
+                Name:
+                <input type="text" placeholder="Name" required>
+            </label>
+            <br>
+            <br>
+            <label>
+                Email:
+                <input type="email" placeholder="Email" required>
+            </label>
+            <br>
+            <br>
+            <label>Which type of support do you prefer:</label>
+            <label>
+                <fieldset id="group1">
+                    <input type="radio" name="group1" value="skin">Skin
+            </label>
+            <label>
+                <input type="radio" name="group1" value="hair">Hair
+            </label>
+            <label>
+                <input type="radio" name="group1" value="both">Both
+            </label>
+            </fieldset>
+            <br>
+            <br>
+            <label>Select your skintype:</label>
+            <fieldset id="group2">
+                <label>
+                    <input type="radio" name="group2" value="oil">Oil
+                </label>
+                <label>
+                    <input type="radio" name="group2" value="dry">Dry
+                </label>
+                <label>
+                    <input type="radio" name="group2" value="sensative">Sensative
+                </label>
+            </fieldset>
+            <br>
+            <br>
+            <label>Select your hairtype:</label>
+            <fieldset id="group3">
+                <label>
+                    <input type="radio" name="group3" value="straight">Straigt
+                </label>
+                <label>
+                    <input type="radio" name="group3" value="curly">Curly
+                </label>
+                <label>
+                    <input type="radio" name="group3" value="gray">Gray
+                </label>
+            </fieldset>
+            <br>
+            <br>
+            <label>Please, chouse your currency:</label>
+            <br>
+            <br>
+            <select id="currency" name="currency">
+                <option value="usd">USD</option>
+                <option value="euro">Euro</option>
+            </select>
+            <br>
+            <br>
+            <label>Any additional comments</label>
+            <br>
+            <br>
+            <textarea name="message" rows="10" cols="30">
+            </textarea>
+            <br>
+            <br>
+            <label>I agree to process my personal data</label>
+            <input type="checkbox">
+            <br>
+            <input type="submit">
+            <input type="reset">
 
         </form>
     </main>
 </body>
+
 </html>
